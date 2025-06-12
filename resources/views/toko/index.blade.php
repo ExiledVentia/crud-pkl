@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Index Toko</title>
-    {{-- @vite('resources/css/app.css') --}}
 </head>
 
 <body style="bg-gray-800">
     <a href="../">Kembali</a>
+
+    <h1>Daftar Toko</h1>
+
     <table border="1" cellpadding="8" cellspacing="0">
         <tr>
             <th>no</th>
