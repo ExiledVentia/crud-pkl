@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Edit Produk</title>
 </head>
+
 <body>
 
     <h1>Edit Produk</h1>
@@ -22,7 +24,7 @@
 
         <label>Toko Penjual:</label><br>
         <select name="id_toko">
-            @foreach($tokos as $toko)
+            @foreach ($tokos as $toko)
                 <option value="{{ $toko->id_toko }}" {{ $toko->id_toko == $product->id_toko ? 'selected' : '' }}>
                     {{ $toko->nama_toko }}
                 </option>
@@ -34,4 +36,5 @@
     </form>
 
 </body>
+
 </html>

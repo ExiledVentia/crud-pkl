@@ -28,13 +28,13 @@
                 <td>{{ $t->alamat }}</td>
                 <td>{{ $t->nomor_telepon }}</td>
                 <td>
-                        <a href="{{ route('toko.edit', $t) }}">Edit</a> |
-                        <form action="{{ route('toko.destroy', $t) }}" method="POST" style="display:inline;">
-                            @csrf
-                            @method('DELETE')
-                            <button type="submit">Hapus</button>
-                        </form>
-                    </td>
+                    <a href="{{ route('toko.edit', $t) }}">Edit</a> |
+                    <form action="{{ route('toko.destroy', $t) }}" method="POST" style="display:inline;">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit">Hapus</button>
+                    </form>
+                </td>
             </tr>
         @endforeach
     </table>
